@@ -1,0 +1,30 @@
+[
+  {
+    "name": "카카오",
+    "code": "035720",
+    "area": "플랫폼·광고·커머스·콘텐츠",
+    "note": "핵심 비교기업. 사업구성 차이 주의",
+    "url": "https://www.kakaocorp.com/"
+  },
+  {
+    "name": "NHN",
+    "code": "181710",
+    "area": "결제·클라우드·커머스·게임",
+    "note": "부문 비교용. 2013년 분할 전후 NAVER 시계열 단절 주의",
+    "url": "https://www.nhn.com/company?tab=domesticCorporation&subTab=paymentAd"
+  },
+  {
+    "name": "카페24",
+    "code": "042000",
+    "area": "커머스 플랫폼·판매자 솔루션",
+    "note": "커머스 부문 비교용, 전체기업 직접 비교 제한",
+    "url": "https://www.cafe24.com/"
+  },
+  {
+    "name": "쿠팡",
+    "code": "NYSE: CPNG",
+    "area": "국내 전자상거래",
+    "note": "국내 사업 경쟁기업이나 미국 상장 모회사. DART 연결재무 직접 비교 제외",
+    "url": "https://ir.aboutcoupang.com/"
+  }
+]

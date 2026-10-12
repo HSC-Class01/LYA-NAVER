@@ -1,0 +1,10 @@
+NAVER agent package validation
+- Python AST: all source files pass
+- Unit tests: 6/6 pass (synthetic input, no real DART values)
+- Workflow YAML: parsed; schedule and both jobs verified
+- Dashboard JavaScript: node --check passed
+- Embedded data: valid JSON; 0 actual observations (API key not supplied)
+- Four chart canvases match four chart constructors
+- Requirements include XML parser dependency lxml
+- ZIP: no dot-prefixed files or directories; no pycache, credentials or bytecode
+Not executed: authenticated DART collection, GitHub Actions, live Pages deployment, browser visual verification.

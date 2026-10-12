@@ -1,0 +1,140 @@
+{
+  "revenue": [
+    "IS",
+    "CIS",
+    [
+      "ifrs-full_Revenue",
+      "ifrs_Revenue"
+    ],
+    [
+      "매출액",
+      "영업수익",
+      "수익(매출액)"
+    ]
+  ],
+  "operating_profit": [
+    "IS",
+    "CIS",
+    [
+      "dart_OperatingIncomeLoss"
+    ],
+    [
+      "영업이익",
+      "영업이익(손실)"
+    ]
+  ],
+  "net_income": [
+    "IS",
+    "CIS",
+    [
+      "ifrs-full_ProfitLoss",
+      "ifrs_ProfitLoss"
+    ],
+    [
+      "당기순이익",
+      "당기순이익(손실)",
+      "분기순이익",
+      "반기순이익"
+    ]
+  ],
+  "assets": [
+    "BS",
+    null,
+    [
+      "ifrs-full_Assets",
+      "ifrs_Assets"
+    ],
+    [
+      "자산총계"
+    ]
+  ],
+  "liabilities": [
+    "BS",
+    null,
+    [
+      "ifrs-full_Liabilities",
+      "ifrs_Liabilities"
+    ],
+    [
+      "부채총계"
+    ]
+  ],
+  "equity": [
+    "BS",
+    null,
+    [
+      "ifrs-full_Equity",
+      "ifrs_Equity"
+    ],
+    [
+      "자본총계"
+    ]
+  ],
+  "current_assets": [
+    "BS",
+    null,
+    [
+      "ifrs-full_CurrentAssets",
+      "ifrs_CurrentAssets"
+    ],
+    [
+      "유동자산"
+    ]
+  ],
+  "current_liabilities": [
+    "BS",
+    null,
+    [
+      "ifrs-full_CurrentLiabilities",
+      "ifrs_CurrentLiabilities"
+    ],
+    [
+      "유동부채"
+    ]
+  ],
+  "cash": [
+    "BS",
+    null,
+    [
+      "ifrs-full_CashAndCashEquivalents",
+      "ifrs_CashAndCashEquivalents"
+    ],
+    [
+      "현금및현금성자산"
+    ]
+  ],
+  "operating_cashflow": [
+    "CF",
+    null,
+    [
+      "ifrs-full_CashFlowsFromUsedInOperatingActivities",
+      "ifrs_CashFlowsFromUsedInOperatingActivities"
+    ],
+    [
+      "영업활동현금흐름",
+      "영업활동으로인한현금흐름"
+    ]
+  ],
+  "investing_cashflow": [
+    "CF",
+    null,
+    [
+      "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+      "ifrs_CashFlowsFromUsedInInvestingActivities"
+    ],
+    [
+      "투자활동현금흐름"
+    ]
+  ],
+  "financing_cashflow": [
+    "CF",
+    null,
+    [
+      "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+      "ifrs_CashFlowsFromUsedInFinancingActivities"
+    ],
+    [
+      "재무활동현금흐름"
+    ]
+  ]
+}
