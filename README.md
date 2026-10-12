@@ -4,14 +4,14 @@
 
 2010년 사업연도부터 NAVER(035420)의 사업·반기·분기보고서 원문을 저장하고, 정기공시 재무수치와 재무비율을 분석하는 GitHub Pages 프로젝트입니다.
 
-**배포 전 상태:** 이 ZIP은 소스 코드이며 DART 실데이터 수집이나 GitHub 배포가 아직 실행되지 않았습니다. 위 링크는 배포 후 사용할 예정 주소입니다. 첨부 지표 파일/배지 이미지가 전달되지 않아 표준 지표와 기본 SVG 배지를 사용했습니다.
+**배포 상태:** 소스 코드와 GitHub Actions 워크플로 템플릿이 저장소에 있습니다. 실제 데이터 수집·Pages 배포는 저장소 Secret `DART_API_KEY` 설정 후 Actions를 한 번 실행해 확인해야 합니다. OpenDART의 구조화 재무 API는 2015년 이후를 대상으로 하므로 2010–2014는 원문 저장과 별도 검증이 필요합니다. 지표는 `config/metrics.json`에 정의되어 있습니다.
 
 ## 빠른 설치 (GitHub 웹 업로드)
 1. ZIP 압축을 풀고 **내부 파일/폴더를 저장소 루트**에 업로드합니다. ZIP 자체나 상위 폴더를 업로드하지 마세요. 기본 브랜치를 `main`으로 설정하세요.
 2. Settings → Secrets and variables → Actions → New repository secret. 이름 `DART_API_KEY`, 값은 Open DART에서 발급받은 **40자리 인증키**입니다. API 키를 README/코드/웹에 넣지 마세요.
 3. Settings → Actions → General → Workflow permissions → **Read and write permissions**. 조직 정책이나 main 브랜치 보호가 봇 push를 막으면 관리자의 허용이 필요합니다.
 4. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-5. 저장소 Add file → Create new file. 이름 **`.github/workflows/monthly.yml`**을 정확히 입력하고 `workflows/monthly.yml`의 내용을 붙여 넣어 main에 커밋하세요. 일반 `workflows/` 안에서는 Actions가 실행되지 않습니다.
+5. 이 저장소에는 실행 가능한 워크플로가 `.github/workflows/monthly.yml` 경로에 설치되어야 합니다. `workflows/monthly.yml`은 템플릿 보관용이며 Actions가 직접 실행하는 위치가 아닙니다. `python install_workflow.py`를 실행하거나 `.github/workflows/monthly.yml`을 추가한 뒤 커밋하세요.
 6. Actions → NAVER DART monthly update → Run workflow. 초기 수집은 수분~수십 분 걸릴 수 있습니다. 완료 후 deploy 작업의 링크를 확인하세요.
 7. 저장소 오른쪽 About → 톱니바퀴 → Website에 `https://hsc-class01.github.io/LYA-NAVER/` 입력 → Save changes. About은 저장소 메타데이터라 ZIP만으로 변경되지 않습니다.
 
